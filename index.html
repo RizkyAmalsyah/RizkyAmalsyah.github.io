@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="public/style/home.css">
+  <link href="public/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <section id="hero">
+    <div class="container">
+      <div class="isi d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" 
+            data-aos="fade-up" data-aos-delay="200">
+
+            <div class="d-flex justify-content-center">
+              <button class="btn-get-started" id="klik">Click Here</button>
+            </div>
+
+            <div id="content" style="display:none">
+              <h1>Hi, <span id="waktu"></span></h1>
+              <h2>Sekarang Pukul <span id="pukul"></span> WIB</h2>
+              <h2>Selamat Datang di Project Laravel Saya</h2>
+              <h2>Silahkan Pilih Button dibawah ini</h2>
+              <div class="d-flex justify-content-center justify-content-lg-start mb-1">
+                <a href="pages/profil.html" class="btn-get-started scrollto me-3">Profil Saya</a>
+                <a href="pages/portofolio.html" class="btn-get-started scrollto">Portofolio Saya</a>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <a href="pages/hubungi_saya.html" class="btn-get-started scrollto">Hubungi Saya</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+            <img src="public/images/homecode.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="public/libraries/jquery/jquery.js"></script>
+  <script src="public/js/interactive.js"></script>
+</body>
+</html>

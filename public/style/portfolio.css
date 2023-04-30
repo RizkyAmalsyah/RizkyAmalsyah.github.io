@@ -1,0 +1,141 @@
+body{
+    background:#eee;
+}
+
+nav {
+  background: #37517e;
+}
+
+nav .nav-item {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav .nav-item.active {
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#99a1ad;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#37517e;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:15px;
+}
+
+.buttons button:nth-child(1){
+  border:1px solid #37517e !important;
+  color:#37517e;;
+  height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+  border:1px solid #37517e !important;
+  color:#fff;
+  height:40px;
+  background-color:#37517e;;
+}
+
+.buttons button:nth-child(2){
+  border:1px solid #37517e !important;
+  background-color:#37517e;
+  color:#fff;
+  height:40px;
+}
+
+.detail .label {
+  font-weight: bold;
+  color: #6b6b6b;
+}
+
+.detail .row {
+  margin-top: 10px;
+}
+
+.nav-tabs-bordered {
+  border-bottom: 2px solid #ebeef4;
+}
+
+.nav-tabs-bordered .nav-link {
+  margin-bottom: -2px;
+  border: none;
+  color: #2c384e;
+}
+
+.nav-tabs-bordered .nav-link:hover,
+.nav-tabs-bordered .nav-link:focus {
+  color: #4154f1;
+}
+
+.nav-tabs-bordered .nav-link.active {
+  background-color: #fff;
+  color: #4154f1;
+  border-bottom: 2px solid #4154f1;
+}
+
+.card-title {
+  color: #012970;
+}
+
+.label {
+  font-weight: 600;
+  color: rgba(1, 41, 112, 0.6);
+}
+
+.namapendidikan{
+  text-decoration: none;
+}
+
+.foto-sekolah {
+  width: 100px;
+}
+
+table .alamat{
+  width: 10%;
+}
