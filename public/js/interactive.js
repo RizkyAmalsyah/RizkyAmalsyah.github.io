@@ -19,7 +19,7 @@ $(document).ready(function() {
 		pesan = siang;
   } else if (jam >= 15 && jam < 18) {
 		pesan = sore;
-	} else if (jam >= 18 && jam < 6) {
+	} else if (jam >= 18) {
 		pesan = malam;
 	}
 	$('#waktu').append(pesan);
