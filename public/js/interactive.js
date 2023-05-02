@@ -13,13 +13,13 @@ $(document).ready(function() {
 	var sore = ('Selamat Soreee');
 	var malam = ('Selamat Malammm');
 
-	if (jam >= 6 && jam < 10) {
+	if (jam >= 3 && jam < 10) {
 		pesan = pagi; 
 	} else if (jam >= 10 && jam < 15) {
 		pesan = siang;
   } else if (jam >= 15 && jam < 18) {
 		pesan = sore;
-	} else if (jam >= 18) {
+	} else if (jam >= 18 jam < 3) {
 		pesan = malam;
 	}
 	$('#waktu').append(pesan);
